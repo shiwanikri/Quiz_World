@@ -1,0 +1,59 @@
+.q {
+  padding-top: 30px;
+  padding-left: 10%;
+  font-size: 60px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: bolder;
+  color: rgba(0, 0, 0, 0.801);
+}
+.uiz {
+  font-size: 45px;
+}
+.row {
+  padding-top: 2px;
+  padding-left: 1rem;
+  margin-top: 30px;
+}
+.row2 {
+  margin-top: 30px;
+}
+.slo {
+  font-size: 30px;
+  height: 60px;
+  font-family: "Ubuntu", sans-serif;
+  padding-left: 6%;
+}
+.username {
+  color: rgb(240, 184, 29);
+  text-shadow: 0.5px 0.5px black;
+}
+.input-group {
+  margin-bottom: 1rem !important;
+}
+.input-group:not(.has-validation) > .dropdown-toggle:nth-last-child(n + 3),
+.input-group:not(.has-validation)
+  > :not(:last-child):not(.dropdown-toggle):not(.dropdown-menu) {
+  margin-right: 10px;
+}
+input .right {
+  float: right;
+}
+a {
+  color: black;
+}
+.btn-warning {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.col-auto{
+  margin-right: 30px;
+}
+.form-label {
+    font-size: 1.3rem;
+    font-family: 'Baloo Bhai 2';
+}
+form h2{
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Bree Serif', serif;
+}

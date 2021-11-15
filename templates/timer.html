@@ -1,0 +1,142 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timer</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="{% static 'timerStyle.css' %}" />
+  </head>
+  <body>
+    <div class="row">
+      <div class="col-auto me-auto">
+        <a class="navbar-brand" href="#">
+          <span class="q">Q</span><span class="uiz">uiz</span
+          ><span class="q">W</span><span class="uiz">orld</span>
+        </a>
+      </div>
+      <button
+        type="button"
+        class="btn-close float-right shadow-none"
+        aria-label="Close"
+      ></button>
+    </div>
+
+    <div class="card text-center">
+     
+      <div class="card-body">
+        <h5 class="card-title">Competition Will Start In:</h5>
+        <div id="countdown-box" style="font-size: 24px;">
+          <!-- <div class="spinner-border" role="status"></div> -->
+        </div>
+       <button id="demo" style="font-size: 25px; text-align: center;"></button>
+       <!-- <a href="/GiveTest">Start</a>  -->
+       
+      </div>
+  
+    </div>
+
+    <!-- <div class="d-flex p-2 bd-highlight">Instructions</div> -->
+      <div class="instructions">
+        <h2>Meanwhile, please read the Instructions carefully!</h2>
+        <!-- <div id="event-box" class="list">
+          Competition Date: {{post.date|date:"M d, Y H:m:s"}}
+        </div> -->
+        <div id="event-box" style="background-color: rgb(240, 184, 29); font-size: 25px; text-align: center;">Competition Date: {{post.date|date:"M d, Y H:m:s"}}</div>
+        <ol class="list">
+          <!-- <li>Total duration of examination is..</li>           -->
+          <!-- <li></li> -->
+          <li>The competition will begin immediately after the countdown.</li>
+          <li>Once you enter the competition, there will be a countdown timer at the top right corner of screen whch will display the remaining time available for you to complete the examination.</li>
+          <!-- <li>Click on <strong>Save & Next</strong> button to save your answer for the current question and then go to the next question.</li>           -->
+          <!-- <li>Once you move to the next question, you are no longer allowed to change the previous answer.</li>           -->
+          <li>After you have answered all the questions you can click on submit button and the test will be over and you can see your marks.</li>          
+        </ol>
+        <!-- <button class="btn btn-warning me-md-2" type="button">Next</button> -->
+      </div>
+      <div id=""></div>
+
+
+    <script>
+      const eventbox = document.getElementById("event-box")
+      const countdownbox = document.getElementById("countdown-box")
+      // const chek = document.getElementById("chek-box")
+      const startbtn = document.getElementById('demo')
+      // function workingdays()
+      // var dest = new Date({{ post.date|date:"M d, Y H:m:s"}}*1000).getTime();
+      // const examdate = document.getElementById()
+      // var dest = new Date("examdate examtime").getTime();
+      // {{ post.Time_of_exam|date:"U" }}
+      // var dest = new Date(d);
+
+      // console.log(dest);
+      const eventdate = Date.parse(eventbox.textContent)
+      console.log(eventdate);
+      // var x = setInterval(function () {
+        const mycountdown = setInterval( () => {
+        // var now = new Date().getTime();
+        // console.log(now);
+        // now.setDate(today.getDate()+1);
+        const now = new Date().getTime()
+        // var diff = dest - now;
+        const diff = eventdate - now
+        // console.log(diff)
+
+        // var days = Math.floor(diff / (1000 * 60 * 60 * 24));
+        // console.log(days);
+
+        // var hours = Math.floor(
+        //   (diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        // );
+        // console.log(hours);
+
+        // var minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+        // console.log(minutes);
+
+        // var seconds = Math.floor((diff % (1000 * 60)) / 1000);
+        // console.log(seconds);
+        const d = Math.floor(eventdate / (1000 * 60 * 60 * 24) - (now / (1000 * 60 * 60 * 24)))
+        const h = Math.floor((eventdate / (1000 * 60 * 60) - (now / (1000 * 60 * 60))) % 24)
+        const m = Math.floor((eventdate / (1000 * 60) - (now / (1000 * 60))) % 60)
+        const s = Math.floor((eventdate / (1000) - (now / (1000))) % 60)
+
+        // document.getElementById("demo").innerHTML =
+        //   days + "d, " + hours + "hrs: " + minutes + "m: "+ seconds +"s"
+
+        //   document.getElementById("time").innerHTML=dest
+
+        //   if (days <= 0 && hours <= 0 && minutes <= 0 && seconds <= 0
+        //   ) {
+        //   endTime();
+        //   clearInterval(x);
+        // }
+        if (diff>0){
+          countdownbox.innerHTML = d + "days, " + h + "hours, " + m + "minutes, "+ s +"seconds"
+        }
+        else{
+          clearInterval(mycountdown)
+          document.getElementById("demo").innerHTML = "Start";
+          startbtn.addEventListener('click', ()=>{
+            console.log(window.location.href="GiveTest/{{post.id}}")
+          })
+          // countdownbox.innerHTML = "Countdown Complete!"
+          // window.location.href="GiveTest/{{post.id}}"
+        }
+      }, 1000)
+
+      
+    </script>
+  </body>
+</html>

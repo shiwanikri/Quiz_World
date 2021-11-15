@@ -1,0 +1,40 @@
+
+body{
+    background-color:rgb(247, 223, 246);
+}
+#title
+{
+    background-image: url(bg4.jpg);
+    background-size:500px;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position-y: top;
+    padding-top: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 150px;
+
+}
+
+
+.heading
+{
+    margin-top: 30px;
+    margin-left: 2%;
+    font-size: 45px;
+    font-family: 'Merriweather', serif;
+    color:rgb(255, 196, 0)
+}
+
+.detail
+{
+    /* margin-left: 1%; */
+    font-size: 20px;
+}
+
+
+.layout-head
+{
+    background-color:rgb(232, 200, 231);
+    padding: 3% 5%;
+}

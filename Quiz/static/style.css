@@ -1,0 +1,165 @@
+body
+{
+padding-right: 0;
+  
+}
+
+.heading
+{
+  font-size: 30px;
+}
+
+.d-flex
+{
+    text-align: right;
+}
+
+h1
+{
+  padding-left: 50px;
+  font-family: 'IBM Plex Serif', serif;
+}
+.q
+{
+  padding-top: 30px;
+  padding-left: 10%;
+  font-size: 60px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bolder;
+  color: rgba(0, 0, 0, 0.801);
+}
+.uiz
+{
+    font-size: 45px;
+}
+
+#title
+{
+  display:inline-block;
+  background-image: url(bg3.jpg);
+  background-size:100%;
+  background-repeat: no-repeat;
+  height: 630px;
+  padding-left: 30px;
+  padding-right: 0;
+  width: 100%;
+  
+
+}
+.container-fluid
+{
+  padding-left: 2rem;
+}
+.row
+{
+  padding-top:20px;
+  padding-left: 2rem;
+}
+.slo
+{
+  font-size: 40px;
+  height: 60px;
+  font-weight: bolder;
+  font-family: 'Ubuntu', sans-serif;
+  
+}
+.intro
+{
+  font-size: 20px;
+  padding-top: 60px;
+  padding-right: 50%;
+}
+
+.nav-item
+{
+  color: white;
+  font-size: 25px;
+  
+}
+.sign
+{
+  margin-top: 0px;
+  text-align: right;
+}
+
+/* feature section */
+
+#features
+{
+  display: inline-block;
+  padding-left: 7%;
+  padding-right: 14%;
+  padding-bottom: 0%;
+  padding-top:3%;
+}
+.feature-box
+{
+  text-align: center;
+  padding:10%;
+  padding-top: 0.5rem;
+}
+h3{
+  font-weight: bolder;
+  font-size: 20%;
+}
+.p
+{
+  color: #8f8f8f;
+}
+.icon
+{
+   color: #FFB344;
+   margin-bottom: 1rem;
+}
+.icon:hover
+{
+  color:rgb(255, 187, 0) ;
+}
+
+/* why to use our website */
+#why
+{
+  padding-top: 0%;
+  padding-bottom: 10%;
+   text-align: center;
+}
+.head
+{
+  font-size: 2.5rem;
+  color: black;
+}
+.para
+{
+  padding: 0% 25%;
+  font-size: 1rem;
+}
+
+/* 
+footer section */
+
+#footer
+{
+  background-color: rgb(209, 209, 209);
+  padding:7% 15%;
+  text-align: center;
+}
+.foot
+{
+   font-size: 20px;
+   padding: 1rem;
+   color: rgba(0, 0, 0, 0.664);
+}
+
+/* signin section */
+
+.modal-title
+{
+  text-align: left;
+}
+
+.modal-body
+{
+  text-align: left;
+}
+
+/* signin section */

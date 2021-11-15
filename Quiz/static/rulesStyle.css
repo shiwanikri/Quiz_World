@@ -1,0 +1,48 @@
+.q {
+    padding-top: 30px;
+    padding-left: 10%;
+    font-size: 60px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-weight: bolder;
+    color: rgba(0, 0, 0, 0.801);
+  }
+  .uiz {
+    font-size: 45px;
+  }
+  a {
+    color: black;
+  }
+  .row {
+    padding-top: 2px;
+    padding-left: 1rem;
+    margin-top: 10px;
+  }
+  .btn-warning {
+    padding-top: 2px;
+    padding-left: 1rem;
+    margin-top: 30px;
+  }
+  .d-grid{
+    position: absolute;
+      right: 0;
+      top: 58px;
+      margin-right: 1rem;
+  }
+  .col-auto{
+    margin-right: 30px;
+  }
+  .d-flex{
+   background-color: rgb(240, 184, 29);
+  margin: 35px;
+  font-size: 20px;
+  }
+  .container h2{
+    text-align: center;
+  }
+  .container .list{
+    padding-top: 50px;
+  }
+  .container .list li{
+    font-size: 25px;
+    padding: 10px;
+  }

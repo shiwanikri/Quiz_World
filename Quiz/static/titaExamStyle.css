@@ -1,0 +1,66 @@
+.q {
+    padding-top: 30px;
+    padding-left: 10%;
+    font-size: 60px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-weight: bolder;
+    color: rgba(0, 0, 0, 0.801);
+  }
+  .uiz {
+    font-size: 45px;
+  }
+  .row {
+    padding-top: 2px;
+    padding-left: 1rem;
+    margin-top: 10px;
+  }
+  a {
+    color: black;
+  }
+  .btn{
+    font-size: 20px;
+  }
+  .col-auto{
+    margin-right: 30px;
+  }
+  .row .mr-3{
+    background-color: white;
+    border-color: black;
+
+    margin-right: 10px;
+  }
+  .row .exit{
+    margin-right: 35px;
+    background-color: rgb(240, 184, 29);
+    border-color: white
+  }
+  .d-flex{
+    background-color: rgb(240, 184, 29);
+   margin: 35px;
+   margin-top: 50px;
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   }
+   .questions{
+    margin: 35px;
+    border: 2px solid black;
+   }
+   .ques{
+    margin: 35px;
+    border: 2px solid black;
+   }
+   .form-floating{
+    margin: 1rem;
+    margin-left: -1rem;
+   }
+   .btn-warning{
+    padding-top: 2px;
+  padding-left: 1rem;
+  margin-top: 30px;
+  width: 6rem;
+  }
+  .form-control:focus{
+      border-color: black;
+  }
+  

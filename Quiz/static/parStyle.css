@@ -1,0 +1,41 @@
+.q {
+    padding-top: 30px;
+    padding-left: 6%;
+    font-size: 60px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-weight: bolder;
+    color: rgba(0, 0, 0, 0.801);
+  }
+  .uiz {
+    font-size: 45px;
+  }
+  a {
+    color: black;
+  }
+  .row {
+    padding-top: 2px;
+    padding-left: 1rem;
+    margin-top: 10px;
+  }
+  .btn-close{
+    position: absolute;
+      right: 0;
+      margin-right: 1rem;
+      opacity: 100%;
+    
+  }
+  .btn-close:hover{
+    background-color: rgb(240, 184, 29);
+    opacity: 100%;
+  }    
+  .d-flex{
+    background-color: rgb(240, 184, 29);
+  
+   margin-top: 50px;
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   }
+  .btn{
+    line-height: 0.5;
+  }

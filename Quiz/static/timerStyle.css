@@ -1,0 +1,71 @@
+
+.q {
+    padding-top: 30px;
+    padding-left: 6%;
+    font-size: 60px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-weight: bolder;
+    color: rgba(0, 0, 0, 0.801);
+  }
+  .uiz {
+    font-size: 45px;
+  }
+  .row {
+    padding-top: 2px;
+    padding-left: 1rem;
+    margin-top: 30px;
+    margin-bottom: 2rem
+  }
+  a {
+    color: black;
+  
+  }
+  .btn-close{
+    position: absolute;
+      right: 0;
+      margin-right: 1rem;
+      opacity: 50%;
+  }
+  .btn-close:hover{
+    background-color: rgb(240, 184, 29);
+    opacity: 100%;
+  }    
+  
+  .container{
+      position: absolute;
+      top: 20rem;
+      flex-direction: column;
+  }
+  .card-body{
+    background: rgb(240, 184, 29);
+      height: 30vh;
+  }
+  .card-title{
+    font-size: 2.5rem;
+    margin-top: 2rem;
+  }
+  .card{
+    margin: 0rem;
+  }
+  #demo{
+    margin-top: 1rem;
+    font-size: 2rem;
+    padding-left: 1rem;
+  }
+
+  .instructions{
+    margin-top: 80px;
+  }
+  .instructions h2{
+    text-align: center;
+  }
+  .instructions .list{
+    padding-top: 20px;
+  }
+  .instructions .list li{
+    font-size: 25px;
+    padding: 10px;
+  }
+  .instructions ol{
+    margin: 0px 70px;
+  }

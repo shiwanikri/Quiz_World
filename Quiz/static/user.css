@@ -1,0 +1,129 @@
+body
+{
+padding-right: 0;
+ 
+}
+
+.heading
+{
+  font-size: 30px;
+}
+
+
+h1
+{
+  padding-left: 50px;
+  font-family: 'IBM Plex Serif', serif;
+}
+
+.q
+{
+  padding-top: 30px;
+  padding-left: 10%;
+  font-size: 60px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bolder;
+  color: rgba(0, 0, 0, 0.801);
+}
+.uiz
+{
+    font-size: 45px;
+}
+
+#title
+{
+  display:inline-block;
+  background-image: url(bg2.jpg);
+  background-size:65%;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-position-y: top;
+  height: 70%;
+  padding-left: 30px;
+  padding-right: 0;
+  width: 100%;
+}
+
+
+
+
+.container-fluid
+{
+  padding-left: 2rem;
+  padding-right: 0;
+ 
+}
+.row
+{
+  padding-top:2px;
+  padding-left: 2rem;
+}
+.slo
+{
+  font-size: 30px;
+  height: 60px;
+  font-family: 'Ubuntu', sans-serif;
+  padding-left: 2%;
+  
+  
+}
+.profile
+{
+  position: relative;
+  font-size: 21px;
+  padding-top: 30px;
+  padding-right: 19%;
+
+}
+.intro
+{
+  font-size: 40px;
+  padding-top: 40px;
+  padding-right: 100px;
+}
+.user-icon
+{
+  font-size:40px;
+}
+
+.but
+{
+  padding-left: 30%;
+}
+.nav-item
+{
+  color: white;
+  font-size:23px;
+  
+}
+
+/* 
+footer section */
+
+#footer
+{
+  background-color: rgba(248, 186, 15, 0.822);
+    padding:2% 15%;
+    text-align: center;
+}
+.foot
+{
+   font-size: 20px;
+   padding: 1rem;
+   color: rgba(0, 0, 0, 0.664);
+}
+.container
+{
+  padding-top: 10%;
+}
+@media(max-width:980px)
+{
+  .profile{
+  margin-right: 384px;
+  }
+}
+
+/* .modal-body{
+  padding-left: 5%;
+  width: 100%;
+} */
